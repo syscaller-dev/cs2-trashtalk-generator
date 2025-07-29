@@ -43,7 +43,7 @@ function csKeyNotation(e: KeyboardEvent): string | null {
     return null;
 }
 
-const KeyInput: React.FC<KeyInputProps> = ({ keyValue, waitingForKey, keyError, setKey, setWaitingForKey, setKeyError }) => {
+const KeyInput: React.FC<KeyInputProps> = ({ keyValue, waitingForKey, setKey, setWaitingForKey, setKeyError }) => {
     React.useEffect(() => {
         if (!waitingForKey) return;
         function onKeyDown(e: KeyboardEvent) {
